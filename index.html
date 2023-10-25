@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Uft-8">
+<title>.Net实验二</title>
+</head>
+<!---.net实验二蔡宇嘉-->
+    
+<style>
+    .标题
+    {
+        text-align: center;
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+    .标题方块
+    {
+        border:2px solid;
+        border-radius:100px;
+        box-shadow:10px 10px 10px  #888888;
+        padding: 10px;
+        width: 300px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        background-color: white;
+        opacity: 50%;
+    }
+    .内容方块
+    {
+        border:2px solid;
+        border-radius:100px;
+        box-shadow:10px 10px 10px  #888888;
+        padding: 10px;
+        width:750px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        background-color: white;
+        opacity: 90%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .问题内容
+    {
+        border:2px solid;
+        border-radius:100px;
+        box-shadow:10px 10px 10px  #888888;
+        padding-left: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+    }
+</style>
+<body background="https://cdn.jsdelivr.net/gh/renrd/for_img@main/img/578A099342656BFC78E70403302_4C02890B_2091DB.jpg"
+style="background-size: cover;">
+ <div class="标题方块">
+    <h1 class="标题">调查问卷</h1>
+    <p style="text-align:center">.net实验三</p>
+ </div>
+
+ <div class="内容方块">
+    <p class="问题内容">
+        您的性别是？<br>
+        <input type="radio" name="gender">
+                <label for="male">男</label><br>
+        <input type="radio" name="gender">
+                <label for="female">女</label><br>
+     </p>
+     <p class="问题内容">   
+        您的姓名是<br>
+        <input type="text" >
+     </p>
+     <p class="问题内容">
+        目前在上的课（多选）<br>
+        <input type="radio" id="myRadio1" onclick="myFunction(this)">
+                <label>.net平台技术</label><br>
+        <input type="radio" id="myRadio2" onclick="myFunction(this)">
+                <label>数据仓库</label><br>
+        <input type="radio" id="myRadio3" onclick="myFunction(this)">
+                <label>算法设计与分析</label><br>
+        <input type="radio" id="myRadio4" onclick="myFunction(this)">
+                <label>C++程序设计</label><br>
+        <input type="radio" id="myRadio5" onclick="myFunction(this)">
+                <label>无</label><br>
+     </p>
+     <p class="问题内容">
+        对这些课的平均评价（单选）<br>
+        <input type="radio" id="myRadio1" name="classes" onclick="myFunction(this)">
+                <label>非常好</label><br>
+        <input type="radio" id="myRadio2" name="classes" onclick="myFunction(this)">
+                <label>很好</label><br>
+        <input type="radio" id="myRadio3"name="classes" onclick="myFunction(this)">
+                <label>好</label><br>
+        <input type="radio" id="myRadio4" name="classes" onclick="myFunction(this)">
+                <label>一般</label><br>
+        <input type="radio" id="myRadio5"name="classes" onclick="myFunction(this)">
+                <label>差</label><br>
+     </p>
+     <p class="问题内容">
+        是否跟得上老师的课（单选）<br>
+        <input type="radio" id="myRadio1" name="classes2" onclick="myFunction(this)">
+                <label>轻轻松松</label><br>
+        <input type="radio" id="myRadio2" name="classes2" onclick="myFunction(this)">
+                <label>可以</label><br>
+        <input type="radio" id="myRadio3"name="classes2" onclick="myFunction(this)">
+                <label>勉勉强强</label><br>
+        <input type="radio" id="myRadio4" name="classes2" onclick="myFunction(this)">
+                <label>有困难</label><br>
+        <input type="radio" id="myRadio5"name="classes2" onclick="myFunction(this)">
+                <label>不行</label><br>
+     </p>
+     <p class="问题内容">   
+        为你这三年的学习写一些心得<br>
+        <textarea type="text" style="height: 100px;width:80%"></textarea>
+     </p>
+     <script>
+        var prev = null;
+function myFunction(current) {
+  if(prev===current && current.checked) {
+    current.checked = false;
+    prev = null;
+  } else {
+    prev = current;
+  }
+}
+        </script>
+
+
+ </div>
+</body>
+</html>
